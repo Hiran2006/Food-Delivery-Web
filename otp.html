@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="back"><a href="./login.html"><img src="./Image/arrow-down-sign-to-navigate.png" alt=""></a></div>
+    <div class="up">
+        <h3>We have sent a verification code to</h3>
+        <h3>+91-9010858965</h3>
+        <div class="boxs">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <button onclick="onPress()"></button>
+        </div>
+    </div>
+    <div class="down">
+        <div class="time">0.19</div>
+        <div class="resend">
+            <h5>Didn't receive the code?</h5>
+            <p>Resend</p>
+        </div>
+    </div>
+    <script>
+        function onPress(){
+            console.log("trigger");
+            window.sessionStorage.setItem("login","true");
+            window.location = "index.html";
+        }
+    </script>
+</body>
+</html>

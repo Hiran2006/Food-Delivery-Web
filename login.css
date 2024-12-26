@@ -62,15 +62,19 @@ body{
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
+    background-color: white;
 }
 .diff-login img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .diff-login {
+    background-color: transparent;
     display: grid;
     gap:10px 10px;
-    grid-template-areas: "email email""facebook google";
+    grid-template-areas:
+    "email email"
+    "facebook google";
 }
 .email{
     grid-area: email;

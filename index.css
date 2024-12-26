@@ -170,11 +170,13 @@ header div{
     background-color: green;
     text-align: center;
     padding: 5px;
+    width: 60px;
     border-radius: 10px;
     color: white;
     margin-top: 2px;
 }
 .item .status p[status="close"]{
+    width: 60px;
     background-color: red;
     text-transform: uppercase;
     text-align: center;
