@@ -92,10 +92,12 @@ header div{
 }
 .tags .categories{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 10px 0;
 }
 .tags .categories > div{
-    padding: 17px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +105,7 @@ header div{
     text-transform: capitalize;
 }
 .tags img{
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     margin-bottom: 2px;
