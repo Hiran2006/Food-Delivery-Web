@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.back img{
+    transform: rotate(90deg);
+    width: 13px;
+}
+.content{
+    margin: 20px;
+}
+.store{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store img{
+    width: 10px;
+}
+.store .rating-photos > div{
+    color: white;
+    background-color: greenyellow;
+    border-radius: 5px 0 0 5px;
+    margin-right: -20px;
+    padding: 8px;
+}
+.store .photos{
+    margin-top: 4px;
+    background-image: url('./Image/Food/restaurant_logo.jpg');
+}
+.store h5, .store h6{
+    font-weight: lighter;
+}
+.store h6{
+    color: gray;
+}
+.logotag img{
+    width: 80px;
+}
+.del-vis-rev{
+    background-color: #ddd;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.del-vis-rev p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555;
+    padding: 10px 0;
+    width: 33.33%;
+    text-align: center;
+}
+.del-vis-rev .active{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.mod-tim-off{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mod-tim-off img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    padding: 3px;
+    margin: 10px 0;
+}
+.mod-tim-off > div{
+    display: flex;
+    align-items: center;
+}
+.mod-tim-off > div > div{
+    margin: 0 10px;
+}
+.mod-tim-off div img:nth-child(3){
+    border: none;
+    width: 8px;
+    height: 10px;
+}
+.dis-charge{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ccc;
+    margin: 14px 0;
+    border-radius: 6px;
+}
+.dis-charge img{
+    width: 20px;
+    margin: 2px 10px;
+}
+.food-items .category{
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    width: 100vw;
+    margin-left: -20px;
+    padding: 0 10px;
+}
+.food-items .category h3{
+    padding: 10px 50px 10px 2px;
+    font-weight: 500;
+}
+.food-items .category .active{
+    border-bottom: 2px solid red;
+}
+.food-items .category h3[status="no"]{
+    color: #999;
+}
