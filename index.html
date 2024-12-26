@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
+</head>
+<body>
     <script>
         const login = window.sessionStorage.getItem("login");
         if(login == null || login == false){
-            window.location.replace= "Web/login.html";
+            window.location.href= "Web/login.html";
         }
     </script>
-</head>
-<body>
     <section class="fixed-content">
         <header>
             <img src="./Image/location.png" alt="">
