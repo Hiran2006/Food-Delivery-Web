@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
+    color: black;
 }
 header{
     display: flex;
@@ -119,4 +121,65 @@ header div{
 }
 .products h3{
     margin: 12px 0;
+}
+
+.item .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+    display: block;
+}
+.item > img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.item .info{
+    padding: 20px;
+    font-size: 16px;
+}
+.item .details img{
+    width: 15px;
+}
+.item .details .ratting{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+.item .safety-status img{
+    width: 70px;
+    height: 30px;
+}
+.item .safety-status{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.item .status p[status="open"]{
+    text-transform: uppercase;
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2px;
+}
+.item .status p[status="close"]{
+    background-color: red;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2px;
+}
+.item h4{
+    font-size: 19px;
 }
