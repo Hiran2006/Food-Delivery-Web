@@ -1,190 +1,87 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-    text-decoration: none;
-    color: black;
+    box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
-header img{
-    width: 2rem;
-}
-header div{
-    width: 250px;
-    border-bottom: 3px dotted black;
-}
-.search-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid gray;
-    margin: 30px 0;
-    padding: 5px 0;
-    border-radius: 10px;;
-}
-.search-bar img{
-    width: 20px;
-    margin: 0 10px;
-}
-.search-bar input{
-    outline: none;
-    border: none;
-    width: 80%;
-}
-.fixed-content{
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    background-color: white;
-}
-.filter{
+body{
+    padding: 30px;
     display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    font-size: 10px;
-}
-.filter > div{
-    border-radius: 10px;
-    padding: 1px 10px;
-    line-height: 24px;
-    border: 1px solid gray;
-}
-.filter > div:first-child{
-    line-height: 12px;
-}
-.filter > div:last-child{
-    display: flex;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
-    padding-left: 10px;
-    border-right: none;
-}
-.filter > div:last-child > div{
-    border: 1px solid gray;
-    border-radius: 10px;
-    margin-left: 3px;
-    padding: 0 3px;
-}
-.filter img{
-    padding-top: 8px;
-    width: 8px;
-}
-.content{
-    padding: 10px 20px;
-}
-.discounts{
-    display: flex;
-    overflow-x:  scroll;
-}
-.discounts::-webkit-scrollbar{
-    display: none;
-}
-.discounts img{
-    width: 40vw;
-    margin: 0 5vw;
-}
-.tags .categories{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 15px 0;
-}
-.tags .categories > div{
-    width: 80px;
-    height: 100px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-}
-.tags img{
-    width: 70px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-bottom: 2px;
-}
-.tags .see-more{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid gray;
-}
-.tags .see-more img{
-    width: 15px;
-    margin: 5px 5px;
-}
-.products h3{
-    margin: 12px 0;
-}
-
-.item .details{
-    display: flex;
     justify-content: space-between;
+    height: 100vh;
+    background-color: blue;
+}
+.skip{
+    display: flex;
     align-items: center;
-}
-.item{
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px black;
-    display: block;
-}
-.item > img{
-    border-radius: 10px 10px 0 0;
+    justify-content: flex-end;
     width: 100%;
 }
-.item .info{
-    padding: 20px;
-    font-size: 16px;
+.skip > div{
+    padding: 8 20;
+    background-color: #33333373;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
 }
-.item .details img{
-    width: 15px;
+.login{
+    width: 100%;
 }
-.item .details .ratting{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: 5px;
+.login > *{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 10px 0;
 }
-.item .safety-status img{
-    width: 70px;
-    height: 30px;
+.login > a{
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
 }
-.item .safety-status{
-    margin-top: 5px;
+.or{
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
 }
-.item .status p[status="open"]{
-    text-transform: uppercase;
-    background-color: green;
-    text-align: center;
-    padding: 5px;
-    width: 60px;
+.or > div{
+    height: 1px;
+    width: 40%;
+    background-color: white;
+}
+.diff-login > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 10px;
-    color: white;
-    margin-top: 2px;
+    background-color: white;
 }
-.item .status p[status="close"]{
-    width: 60px;
-    background-color: red;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-    margin-top: 2px;
+.diff-login img{
+    width: 20px;
+    height: 20px;
 }
-.item h4{
-    font-size: 19px;
+.diff-login {
+    background-color: transparent;
+    display: grid;
+    gap:10px 10px;
+    grid-template-areas:
+    "email email"
+    "facebook google";
+}
+.email{
+    grid-area: email;
+}
+.facebook{
+    grid-area: facebook;
+}
+.google{
+    grid-area: google;
 }
