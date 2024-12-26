@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: blue;
+}
+.skip{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.skip > div{
+    padding: 8 20;
+    background-color: #33333373;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+}
+.login{
+    width: 100%;
+}
+.login > *{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.login > a{
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.or{
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.or > div{
+    height: 1px;
+    width: 40%;
+    background-color: white;
+}
+.diff-login > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.diff-login img{
+    width: 30px;
+    height: 30px;
+}
+.diff-login {
+    display: grid;
+    gap:10px 10px;
+    grid-template-areas: "email email""facebook google";
+}
+.email{
+    grid-area: email;
+}
+.facebook{
+    grid-area: facebook;
+}
+.google{
+    grid-area: google;
+}

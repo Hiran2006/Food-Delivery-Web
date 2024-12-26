@@ -162,6 +162,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
 }
 .search{
     display: flex;
@@ -180,4 +184,15 @@
     height: 30px;
     border-radius: 0 20px 20px 0;
     padding-right: 7px;
+}
+.recommended header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+}
+.recommended header img{
+    width: 10px;
+    height: 10px;
 }
