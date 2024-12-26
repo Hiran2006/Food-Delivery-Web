@@ -94,9 +94,11 @@ header div{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 15px 0;
 }
 .tags .categories > div{
-    margin: 5px;
+    width: 80px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
